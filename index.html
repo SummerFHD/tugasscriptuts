@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahasiswa Biodata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn.discordapp.com/attachments/1102555174645534730/1297838330016301056/0ec9f9f6-784f-4528-84eb-8000f185b2c6.png?ex=671761a2&is=67161022&hm=6998a0d6c65c0eca6a6e457dbc2057d2ac8f8a90ea7b1ed6aea7cf3344df8405&" alt="Profile Image" />
+        <h3>Andi Muhammad Nauval Ramadhan</h3>
+    </header>
+
+    <main>
+        
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showContent('2')">Biodata</a></li>
+                <li><a href="#" onclick="showContent('3')">Pendidikan</a></li>
+                <li><a href="#" onclick="showContent('4')">Pengalaman</a></li>
+                <li><a href="#" onclick="showContent('5')">Keahlian</a></li>
+                <li><a href="#" onclick="showContent('6')">Publikasi</a></li>
+            </ul>
+        </nav>
+
+        <section id="content">
+            <div id="2">
+                <h1>Biodata</h1>
+                <hr>
+                <br>
+                <p>&#x2022; NIM : 2023081039</p>
+                <p>&#x2022; Nama : Andi Muhammad Nauval Ramadhan</p>
+                <p>&#x2022; Tanggal Lahir : 12 November 2004</p>
+                <p>&#x2022; Tempat Lahir : Tangerang Selatan</p>
+            </div>
+            <div id="3" style="display: none;">
+                <h2>Pendidikan</h2>
+                <hr>
+                <br>
+                <p><strong>&#x2022; Universitas Pembangunan Jaya</strong></p>
+                <br>
+                <p><strong>&#x2022; SMK Waskito Multimedia</strong></p>
+                <br>
+                <p><strong>&#x2022; SMPN 9 Tangerang Selatan</strong></p>
+            </div>
+            <div id="4" style="display: none;">
+                <h2>Pengalaman</h2>
+                <hr>
+                <br>
+                <p><strong>&#x2022; Admin Discord Community Seller - PT Bukalapak.com Tbk </strong></p>
+                <br>
+                <p><strong>&#x2022; Admin Discord Community Seller - Itemku.com </strong></p>
+            </div>
+            <div id="5" style="display: none;">
+                <h2>Keterampilan dan Kemampuan</h2>
+                <hr>
+                <br>
+                <p>&#x2022; Problem Solving</p>
+            </div>
+            <div id="6" style="display: none;">
+                <h2>Publikasi & Informasi Publikasi</h2>
+                <hr>
+                <br>
+                <p>&#x2022; Website Cek Zodiac: <a href="https://github.com/SummerFHD/cekzodiak">Link</a></p>
+            </div>
+        </section>
+
+        
+        <aside>
+            <h2>Hobi</h2>
+            <hr>
+            <br>
+            <p>&#x2022; Bermain Game</p>
+            <p>&#x2022; Tidur</p>
+            <p>&#x2022; Ngulik</p>
+            <p>&#x2022; Makans</p>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="left">
+            <p>Twitter: @andimnrz</p>
+            <p>FB: @andimnrz</p>
+            <p>Instagram: @andimnrz</p>
+        </div>
+        <div class="center">
+            <p>&copy; 2024 All Rights Reserved</p>
+        </div>
+        <div class="right">
+            <p>Porto Web</p>
+            <p>WEb Keren</p>
+        </div>
+    </footer>
+
+    <script>
+        function showContent(contentId) {
+            const sections = document.querySelectorAll('section > div');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
